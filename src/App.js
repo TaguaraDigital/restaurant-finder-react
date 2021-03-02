@@ -11,11 +11,11 @@ const App = () => {
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
-            {/* <Route exact path="/restaurants/:id/update" component={RestaurantUpdate} />
+            <Route exact path="/restaurants/:id/update" component={RestaurantUpdate} />
             <Route exact path="/restaurants/:id" component={RestaurantDetail} />
             <Route path="/*">
-              <Redirect to="/" />
-            </Route> */}
+              <h1>Redirect to="/" </h1>
+            </Route>
           </Switch>
         </Router>
       </div>
