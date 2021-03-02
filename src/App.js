@@ -19,7 +19,7 @@ const App = () => {
             <Route exact path="/restaurants/:id/update" component={RestaurantUpdate} />
             <Route exact path="/restaurants/:id" component={RestaurantDetail} />
             <Route path="/*">
-              <Redirect to={window.location.hostname} />
+              <Redirect to="/" />
             </Route>
           </Switch>
         </Router>
