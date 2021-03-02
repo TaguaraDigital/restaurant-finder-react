@@ -4,7 +4,9 @@ import Home from './pages/Home';
 import RestaurantDetail from './pages/RestaurantDetail';
 import RestaurantUpdate from './pages/RestaurantUpdate';
 
-console.log(window.location.href)
+console.log(window.location.href, 'href')
+console.log(window.location.hostname, 'hostname')
+console.log(window.location.pathname, 'pathname')
 
 const App = () => {
   return (
@@ -15,9 +17,9 @@ const App = () => {
             <Route exact path="/" component={Home} />
             <Route exact path="/restaurants/:id/update" component={RestaurantUpdate} />
             <Route exact path="/restaurants/:id" component={RestaurantDetail} />
-            <Route path="/*">
+            {/* <Route path="/*">
               <Redirect to="/" />
-            </Route>
+            </Route> */}
           </Switch>
         </Router>
       </div>
