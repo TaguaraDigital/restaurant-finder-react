@@ -1,7 +1,11 @@
+import Home from './pages/Home';
+import { RestaurantsContextProvider } from './context/RestaurantsContext';
 
 const App = () => {
   return (
-    <h1>prueba en app</h1>
+    <RestaurantsContextProvider>
+      <Home />
+    </RestaurantsContextProvider>
   );
 }
 
