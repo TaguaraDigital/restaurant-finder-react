@@ -8,13 +8,14 @@ const App = () => {
   return (
     <RestaurantsContextProvider>
       <div className="container">
+        <h1>Joder</h1>
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/restaurants/:id/update" component={RestaurantUpdate} />
             <Route exact path="/restaurants/:id" component={RestaurantDetail} />
             <Route path="/*">
-              <h1>Redirect to="/" </h1>
+              <Redirect to="/" />
             </Route>
           </Switch>
         </Router>
