@@ -8,7 +8,7 @@ const App = () => {
   return (
     <RestaurantsContextProvider>
       <div className="container">
-        <h1>Joder</h1>
+        <h1>jodido esta app</h1>
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
