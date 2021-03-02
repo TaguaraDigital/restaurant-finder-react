@@ -5,6 +5,10 @@ import RestaurantDetail from './pages/RestaurantDetail';
 import RestaurantUpdate from './pages/RestaurantUpdate';
 
 
+console.log(window.location.href, 'href')
+console.log(window.location.hostname, 'hostname')
+console.log(window.location.pathname, 'pathname')
+
 const App = () => {
   return (
     <RestaurantsContextProvider>
@@ -15,7 +19,7 @@ const App = () => {
             <Route exact path="/restaurants/:id/update" component={RestaurantUpdate} />
             <Route exact path="/restaurants/:id" component={RestaurantDetail} />
             <Route path="/*">
-              <Redirect to="/" />
+              <Redirect to={window.location.hostname} />
             </Route>
           </Switch>
         </Router>
