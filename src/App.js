@@ -8,6 +8,7 @@ const App = () => {
   return (
     <RestaurantsContextProvider>
       <div className="container">
+        <h1>es una prueba con el homepage</h1>
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
