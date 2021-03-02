@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import { RestaurantsContextProvider } from './context/RestaurantsContext';
 import Home from './pages/Home';
 import RestaurantDetail from './pages/RestaurantDetail';
