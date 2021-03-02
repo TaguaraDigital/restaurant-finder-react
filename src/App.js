@@ -4,13 +4,15 @@ import Home from './pages/Home';
 import RestaurantDetail from './pages/RestaurantDetail';
 import RestaurantUpdate from './pages/RestaurantUpdate';
 
+console.log(window.location.href)
+
 const App = () => {
   return (
     <RestaurantsContextProvider>
       <div className="container">
         <Router>
           <Switch>
-            <Route exact path="/restaurant-finder-react" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route exact path="/restaurants/:id/update" component={RestaurantUpdate} />
             <Route exact path="/restaurants/:id" component={RestaurantDetail} />
             <Route path="/*">
